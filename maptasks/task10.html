@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let arr = [
+    { first: "Elie", last: "Schoppik" },
+    { first: "Tim", last: "Garcia" },
+    { first: "Matt", last: "Lane" },
+    { first: "Colt", last: "Steele" },
+  ];
+  function extractFullName(arr) {
+    let fullname = arr.map(function (value) {
+      return value.first+" "+value.last;
+    });
+    return fullname;
+  }
+
+  document.write(JSON.stringify(extractFullName(arr)));
+</script>

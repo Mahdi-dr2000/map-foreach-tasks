@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let arr = [
+    {
+      name: "Angelina Jolie",
+      age: 80,
+    },
+    {
+      name: "Eric Jones",
+      age: 2,
+    },
+    {
+      name: "Paris Hilton",
+      age: 5,
+    },
+    {
+      name: "Kayne West",
+      age: 16,
+    },
+    {
+      name: "Bob Ziroll",
+      age: 100,
+    },
+  ];
+
+  function makeStrings(arr) {
+    let res=arr.map(function(value)
+    {
+       if(value.age>=18)
+       {
+         value.name=value.name+" can go to the Matrix"+"<br>";
+       }
+       else
+       {
+        value.name=value.name+" is under age !!"+"<br>";
+       }
+       return value.name;
+    });
+    return res;
+  }
+  document.write(JSON.stringify(makeStrings(arr)));
+</script>

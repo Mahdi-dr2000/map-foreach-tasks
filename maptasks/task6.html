@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  let arr = [
+    {
+      name: "Angelina Jolie",
+      age: 80,
+    },
+    {
+      name: "Eric Jones",
+      age: 2,
+    },
+    {
+      name: "Paris Hilton",
+      age: 5,
+    },
+    {
+      name: "Kayne West",
+      age: 16,
+    },
+    {
+      name: "Bob Ziroll",
+      age: 100,
+    },
+  ];
+  function readyToPutInTheDOM(arr)
+  {
+    let res=arr.map(function(value)
+    {
+       return `<h1>${value.name}</h1>`+`<h2>${value.age}</h2>`;
+    });
+    return res;
+  }
+
+  document.write(readyToPutInTheDOM(arr));
+</script>

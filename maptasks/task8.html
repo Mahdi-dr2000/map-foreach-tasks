@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+
+    arr=[1,2,3];
+    arr2=[1,-2,-3];
+    function valTimesIndex(arr)
+    {
+        let result =arr.map(function(value,index)
+        {
+           return value*index;
+        });
+        return  JSON.stringify(result);
+    }
+    document.write(valTimesIndex(arr));
+    document.write("<br>"+valTimesIndex(arr2));
+</script>

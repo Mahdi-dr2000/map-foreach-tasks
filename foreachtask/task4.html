@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  function addKeyAndValue(arrayofobject) {
+    let arr = [];
+    for (let i = 0; i < arrayofobject.length-1; i++) {
+      arr[arr.length] = {name:arrayofobject[i].name,title:arrayofobject[4].title};
+    }
+   
+    return arr;
+  }
+
+  document.write(JSON.stringify(
+    addKeyAndValue([{ name: "Elie" }, { name: "Tim" }, { name: "Matt" }, { name: "Colt" },{title: "instructor" }])));
+</script>
